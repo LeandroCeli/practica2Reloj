@@ -1,8 +1,3 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package practica2reloj;
 
 import java.time.LocalDate;
@@ -20,12 +15,14 @@ public class Practica2Reloj {
 
         Reloj reloj = new Reloj(LocalDate.now());
 
-        Persona persona = new Persona("Ana", reloj);
+        Persona persona = new Persona("Leandro", reloj);
 
         persona.mostrarInformacion();
 
-        
-       
+        RelojFit relojFit = new RelojFit(LocalDate.now());
+        // En desarollo 
+        relojFit.cuentaPasos(10, 4); // Ejemplo de coordenadas
+
     }
 
 }
