@@ -1,6 +1,7 @@
 package practica2reloj;
 
 import java.time.LocalDate;
+import java.time.LocalTime;
 
 /**
  *
@@ -13,13 +14,13 @@ public class Practica2Reloj {
      */
     public static void main(String[] args) {
 
-        Reloj reloj = new Reloj(LocalDate.now());
+        Reloj reloj = new Reloj(LocalDate.now(),LocalTime.now());
 
         Persona persona = new Persona("Leandro", reloj);
 
         persona.mostrarInformacion();
 
-        RelojFit relojFit = new RelojFit(LocalDate.now());
+        RelojFit relojFit = new RelojFit(0,LocalDate.now(),LocalTime.now());
         // En desarollo 
         relojFit.cuentaPasos(10, 4); // Ejemplo de coordenadas
 

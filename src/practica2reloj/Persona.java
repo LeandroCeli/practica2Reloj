@@ -37,6 +37,6 @@ public class Persona {
 
     public void mostrarInformacion() {
         System.out.println("Nombre: " + nombre);
-        reloj.mostrarFecha();
+        reloj.mostrarFechaHora();
     }
 }
